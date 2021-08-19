@@ -40,9 +40,8 @@ class List_Item extends React.Component {
 
     render() {
         return (
-            <li className="list-item">
-                <div className="list-item-text" style={this.state.finished ? {textDecoration:'line-through'} : {textDecoration:'none'}}
-                      onDoubleClick={this.finishTask}>
+            <li className="list-item" onClick={this.finishTask}>
+                <div className="list-item-text" style={this.state.finished ? {textDecoration:'line-through'} : {textDecoration:'none'}}>
                     {this.state.isEditing === false && this.state.task}
                     {this.state.isEditing && 
                     <form className="edit-form" onSubmit={this.handleSubmit}>
