@@ -9,7 +9,7 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      todos: [{task:'A todo list', id:uuidv4()},{task:'Using React', id:uuidv4()}, {task:'Double click', id:uuidv4()}, {task:'To complete a task', id:uuidv4()}],
+      todos: [{task:'A todo list', id:uuidv4()},{task:'Using React', id:uuidv4()}, {task:'click', id:uuidv4()}, {task:'To complete a task', id:uuidv4()}],
       newTask: ''
     }
 
