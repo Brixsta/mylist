@@ -45,7 +45,7 @@ class List_Item extends React.Component {
                       onDoubleClick={this.finishTask}>
                     {this.state.isEditing === false && this.state.task}
                     {this.state.isEditing && 
-                    <form onSubmit={this.handleSubmit}>
+                    <form className="edit-form" onSubmit={this.handleSubmit}>
                         <input className="edit-input" onChange={this.handleChange} value={this.state.task} type="text"></input>
                     </form>}
                 </div>
